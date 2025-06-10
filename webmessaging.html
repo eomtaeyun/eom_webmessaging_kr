@@ -18,7 +18,7 @@
   <button onclick="getValue()">값 가져오기</button>
 
   <p id="result"></p>
-
+<!--
   <script>
     function getValue() {
       // input 요소에서 값 가져오기
@@ -28,9 +28,11 @@
       document.getElementById("result").innerText = "입력한 값: " + inputValue;
     }
   </script>    
-<!-- -->
+ -->
    
-    <script type="text/javascript" charset="utf-8">       
+    <script type="text/javascript" charset="utf-8">
+    let inputValue = ''; // 전역 변수 선언
+    document.getElementById("result").innerText = "입력한 값: " + inputValue;// 추가
       (function (g, e, n, es, ys) {
         g['_genesysJs'] = e;
         g[e] = g[e] || function () {

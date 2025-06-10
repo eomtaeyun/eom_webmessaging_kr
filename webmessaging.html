@@ -47,14 +47,11 @@
         environment: 'prod-apne2',
         deploymentId: 'b7eefbb7-6bf4-448b-a80e-21082458eec7'
       });
-
-    let inputValue = ''; // 전역 변수 선언
-    document.getElementById("result").innerText = "입력한 값: " + inputValue;// 추가
         
       Genesys("command", "Database.set", {
         messaging: {
           customAttributes: {
-            입력값:inputValue,
+            입력값:getValue(),
             department: "Product Support",
             PSG_skill: "API/Integration",
             device: "mobile",

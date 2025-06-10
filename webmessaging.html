@@ -10,10 +10,10 @@
         <li><a href="index.html">Product Support Home Page</a></li>
     </ul>
     <h1>Product Support - Web Message</h1>
-    
+    <!--
     <label for="user-id">사용자 아이디</label>
     <input type="text" id="user-id" placeholder="특수문자 포함 10자 이상">
-<!-- -->
+     -->
   <input type="text" id="myInput" placeholder="값을 입력하세요">
   <button onclick="getValue()">값 가져오기</button>
 
@@ -31,8 +31,6 @@
  -->
    
     <script type="text/javascript" charset="utf-8">
-    let inputValue = ''; // 전역 변수 선언
-    document.getElementById("result").innerText = "입력한 값: " + inputValue;// 추가
       (function (g, e, n, es, ys) {
         g['_genesysJs'] = e;
         g[e] = g[e] || function () {
@@ -50,6 +48,9 @@
         deploymentId: 'b7eefbb7-6bf4-448b-a80e-21082458eec7'
       });
 
+    let inputValue = ''; // 전역 변수 선언
+    document.getElementById("result").innerText = "입력한 값: " + inputValue;// 추가
+        
       Genesys("command", "Database.set", {
         messaging: {
           customAttributes: {

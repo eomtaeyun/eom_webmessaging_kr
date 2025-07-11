@@ -1,1 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic AI</title>
+</head>
+<body>
+    <div id="genesys-support-center"></div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+    </ul>
+    <h1>Agentic AI(AI Studio and AI Guides)</h1>
 
+    <li><a href="https://www.genesys.com/capabilities/ai-studio" target="_blank"> New Time Slot </a></li>
+    
+    <script type="text/javascript" charset="utf-8">
+      (function (g, e, n, es, ys) {
+        g['_genesysJs'] = e;
+        g[e] = g[e] || function () {
+          (g[e].q = g[e].q || []).push(arguments)
+        };
+        g[e].t = 1 * new Date();
+        g[e].c = es;
+        ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
+      })(window, 'Genesys', 'https://apps.mypurecloud.com/genesys-bootstrap/genesys.min.js', {
+        environment: 'prod-usw2',
+        deploymentId: '7a6cdfe6-23fe-4c05-b93e-edf765b46226'
+      });
+
+      // Wait for Genesys to load, then set custom attributes
+      function setGenesysCustomAttributes() {
+        if (typeof Genesys === "function") {
+          Genesys("command", "Database.set", {
+            messaging: {
+              customAttributes: {
+                department: "Product Support",
+                PSG_skill: "API/Integration",
+                device: "mobile",
+                Cust_Issue: "SSO login",
+                name: "Christopher Nissen"
+              }
+            }
+          });
+        } else {
+          setTimeout(setGenesysCustomAttributes, 500);
+        }
+      }
+      setTimeout(setGenesysCustomAttributes, 1000);
+    </script>
+</body>
+</html>

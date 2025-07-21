@@ -1,10 +1,18 @@
-//version_02
 window.Framework = {
     config: {
         name: "teomdev",
         clientIds: {
-            //'usw2.pure.cloud': '6c7d0033-ac58-40d0-962a-93debe113ede'  https://apps.apne2.pure.cloud
-            'apps.usw2.pure.cloud': 'cf7b8064-22e9-4490-b33a-ab4a669613dc'
+            "cac1.pure.cloud": "<your OAuth Client ID>",
+            "sae1.pure.cloud": "<your OAuth Client ID>",
+            "mypurecloud.com": "<your OAuth Client ID>",
+            "usw2.pure.cloud": "cf7b8064-22e9-4490-b33a-ab4a669613dc",
+            "aps1.pure.cloud": "<your OAuth Client ID>",
+            "apne2.pure.cloud": "<your OAuth Client ID>",
+            "mypurecloud.com.au": "<your OAuth Client ID>",
+            "mypurecloud.jp": "<your OAuth Client ID>",
+            "mypurecloud.ie": "<your OAuth Client ID>",
+            "mypurecloud.de": "<your OAuth Client ID>",
+            "euw2.pure.cloud": "<your OAuth Client ID>"
         },
         settings: {
             embedWebRTCByDefault: true,
@@ -16,13 +24,12 @@ window.Framework = {
             enableTransferContext: true,
             dedicatedLoginWindow: false,
             embeddedInteractionWindow: true,
-            enableConfigurableCallerId: true,
-            enableServerSideLogging: true,
-            enableCallHistory: true,
+            enableConfigurableCallerId: false,
+            enableServerSideLogging: false,
+            enableCallHistory: false,
             defaultOutboundSMSCountryCode: "+1",
             searchTargets: ["people", "queues", "frameworkContacts", "externalContacts"],
-            callControls: ["pickup", "hold", "mute", "transfer", "disconnect", "record", "securePause", "dtmf", "scheduleCallback", "flag", "requestAfterCallWork"],
-            //callControls: ["pickup", "transfer", "mute", "disconnect"],
+            callControls: ["pickup", "transfer", "mute", "disconnect"],
             theme: {
                 primary: "#62367A",
                 text: "#DAD5DD",
